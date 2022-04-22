@@ -1,0 +1,95 @@
+@import "colors";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@400;500;700&display=swap');
+
+.btn{
+    padding: 15px 50px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &.btn-primary{
+        color: $white;
+        background-color: $goldD4;
+        border: 1px solid $goldD4;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    
+        &:hover{
+            border: 1px solid $goldD2;
+            background-color: $goldD2;
+            color: $white;
+        }
+
+        &:disabled{
+            cursor: not-allowed;
+            background-color: $greyL3;
+            border: 1px solid $greyL3;
+            color: $greyD3;
+
+            &:active{
+                cursor: not-allowed;
+                background-color: $greyL3;
+                background: $greyL3;
+                border: 1px solid $greyL3;
+                color: $greyD3;
+            }
+        }
+
+        &:focus{
+            border: 1px solid $goldD4;
+            background-color: $goldD4;
+            color: $white;
+            outline: $greyD1 solid 1px;
+        }
+
+        &:active{
+            border: 1px solid transparent !important;
+            outline: none;
+            background: radial-gradient(50% 50% at 50% 50%, #A48946 43.23%, #7B6428 100%);
+            color: $white;
+        }
+    }
+
+    &.btn-secondary{
+        color: $goldD4;
+        background-color: transparent;
+        border: 1px solid $goldD4;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    
+        &:hover{
+            border: 1px solid $goldD2;
+            color: $goldD2;
+        }
+
+        &:disabled{
+            cursor: not-allowed;
+            border: 1px solid $greyL3;
+            color: $greyD3;
+
+            &:active{
+                cursor: not-allowed;
+                border: 1px solid $greyL3;
+                color: $greyD3;
+                background: transparent;
+            }
+        }
+
+        &:focus{
+            border: 1px solid $goldD4;
+            color: $goldD4;
+            outline: $greyD1 solid 1px;
+        }
+
+        &:active{
+            border: 1px solid transparent !important;
+            outline: none;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(164, 137, 70, 0.25) 43.23%, rgba(123, 100, 40, 0.25) 100%);
+            color: $goldD4;
+        }
+    }
+}
+
